@@ -1,3 +1,5 @@
+package ads.coding.lista;
+
 public class LampadaInteligente {
     private boolean ligada;
     private String modo;

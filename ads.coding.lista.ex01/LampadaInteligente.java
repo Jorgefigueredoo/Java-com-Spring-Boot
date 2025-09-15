@@ -22,7 +22,6 @@ public class LampadaInteligente {
         }
     }
 
-    // Exibe o estado atual
     public void mostrarStatus() {
         System.out.println("Lâmpada " + (ligada ? "ligada" : "desligada") + " | Modo: " + modo);
     }

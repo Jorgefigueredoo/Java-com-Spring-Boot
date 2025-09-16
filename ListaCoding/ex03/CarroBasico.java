@@ -1,4 +1,4 @@
-package ads.coding.lista;
+package ListaCoding.ex03;
 
 public class CarroBasico {
     private boolean ligado;
@@ -34,7 +34,7 @@ public class CarroBasico {
             return;
         }
         this.ligado = false;
-        this.velocidadeAtual = 0; // Zera a velocidade ao desligar
+        this.velocidadeAtual = 0;
         System.out.println("Carro desligado. Velocidade zerada.");
     }
 

@@ -30,10 +30,11 @@ public class VentiladordeMesa {
 
     public void desligar() {
         if (!ligado) {
-            System.out.println("O ventilador já est;a desligado");
+            System.out.println("O ventilador já está desligado");
             return;
         }
         this.ligado = false;
+        this.velocidadeAtual = 0;
         System.out.println("Ventilador desligado");
     }
 
@@ -49,10 +50,10 @@ public class VentiladordeMesa {
         int novaVelocidade = this.velocidadeAtual + incremento;
 
         if (novaVelocidade > VELOCIDADE_MAXIMA) {
-            System.out.println("Aumentando velocidade... Velocidade máxima atingida" + VELOCIDADE_MAXIMA + "km/h");
+            System.out.println("Aumentando velocidade... Velocidade máxima atingida: " + VELOCIDADE_MAXIMA + " km/h");
         } else {
             this.velocidadeAtual = novaVelocidade;
-            System.out.println("aumentando velocidade... Velocidade atual: " + this.velocidadeAtual + "km/h");
+            System.out.println("aumentando velocidade... Velocidade atual: " + this.velocidadeAtual + " km/h");
         }
     }
 
@@ -74,6 +75,13 @@ public class VentiladordeMesa {
             System.out
                     .println("Ventilador diminuando velocidade... Velocidade atual: " + this.velocidadeAtual + "km/h");
         }
+    }
+
+    public void exibirResultados() {
+        System.out.println("\n --- Estado atual do Ventilador ---");
+        System.out.println("Estado: " + (ligado ? "Ligado" : "Desligado"));
+        System.out.println("Velocidade: " + velocidadeAtual + " km/h");
+        System.out.println("-----------------------------\n");
     }
 
 }

@@ -1,7 +1,6 @@
 package ListaCoding.ex05;
 
 public class TelevisaoSimples {
-    // Exemplo 5: TelevisaoSimples
 
     private boolean ligada = false;
     private int canal = 1;
